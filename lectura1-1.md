@@ -12,7 +12,7 @@ La cualidad que parece más relevante en el esquema es la idea de poder calcular
 
 > For each item _j_ we compute the _k_ most similar items, where _k_ << _n_ and record these item numbers and their similarities with _j_
 
-Existen otras técnicas interesantes que se podrían agregar en el árticulo, como hacer _prunning_ dejando _items_ que tengan un mínimo de _m_ evaluciones de usuarios en común.
+Existen otras técnicas interesantes, como la que se muestra en [1], donde que se hace _prunning_ dejando _items_ que tengan un mínimo de ```m``` evaluciones de usuarios en común.
 
 Esta lógica es la clave de **escalabilidad** presentada en el paper, pues al agregar nuevos usuarios se puede asumir que la similitud entre _items_ tiene variaciones pequeñas o incluso despreciables. Además, esta misma es capaz de atacar el problema de reducción de rendimiento  en los casos donde la **distribución de datos** es pobre (ie: usuarios nuevos que no tienen muchos _ratings_), pues el recomendador se basará en los _items_ en los que sí se han hecho evaluaciones, lo que definitiva mejorará la predicción para estos usuarios.
 
@@ -24,7 +24,7 @@ Para mí este es el fue el primer punto en contra en sus experimentos, pues creo
 A partir de este _dataset_ se elige la métrica **_MAE_** para la comparación de rendimientos de diferentes esquemas. Creo que si bien esta es una buena métrica para determinar la **calidad de las predicciones**, en un sistema recomendador se debería evaluar algo más que eso. En mis lecturas me topé con el término **_serendipity_** que engloba la idea de que este esquema no le ofrece al usuario una recomendación a la cual ella/él no pueda acceder, es decir, se podría argumentar sobre si estás prediccion son realmente valiosas para el usuario o simplemente son predicciones "seguras" (que yo creo que son las segunda).
 
 ### 📥 Palabras Finales:
-Creo que si bien el método presentado en el paper es eficiente para el caso studiado (considerando la métrica _MAE_), esto está fuertemente sujeto al _dataset_ utilizado. Desde todo lo leído, llegué a la conclusión de que la relación ```usuarios/items``` es la que genera mayor impacto en cuanto al rendimiento de _user-based_ vs _item_based_, siendo el método propuesto en el paper mejor en los casos de donde existen muchos más usuarios que productos.
+Creo que si bien el método presentado en el paper es eficiente para el caso estudiado (considerando la métrica _MAE_), esto está fuertemente sujeto al _dataset_ utilizado. En [2] se hace una referenia importante a que es la relación ```usuarios/items``` la que genera mayor impacto en cuanto al rendimiento de métodos _user-based_ vs _item_based_, siendo el método propuesto en el paper mejor en los casos de donde existen muchos más usuarios que productos.
 
 
 
