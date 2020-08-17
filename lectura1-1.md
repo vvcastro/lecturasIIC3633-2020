@@ -3,7 +3,8 @@
 ### 📚Contexto:
 Los algoritmos que utilizan _Collaborative Filtering (CF)_ son métodos de recomendación que se basan en buscar similitudes entres usuarios o _items_ y, a partir de estas, generar recomendaciones. Estos algoritmos se pueden dividir en _memory-based methods_ y _model-base methods_, entre los primeros se encuentran los _user-based_ e _item-based_ (según [2]) que serán los principales puntos de discusión en el artículo.
 
-Si bien algoritmos que emplean _CF_ y, específicamente, _user-based CF_ son los algoritmos más populares y utilizados en la práctica (en los años del paper), la expansión de las aplicaciones _web_ y los millones de nuevos datos que estas generan ha revelado problemas específicos en estos cuando se habla de **escalabilidad** o la **distribución datos**.
+Si bien algoritmos que emplean _CF_ y, específicamente, _user-based CF_ son los algoritmos más populares y utilizados en la práctica (en los años del paper), la expansión de las aplicaciones _web_ y los millones de nuevos datos que estas generan ha revelado problemas específicos en estos cuando se habla de **escalabilidad** o de **vacíos en los datos** (_sparcity_).
+
 
 ### 🧾 Item-Based CF:
 Ante estas problemáticas, los autores proponen un esquema _item-based CF_ que ataca ambos problemas y que, según los experimentos realizados, resulta en un menor tiempo de computo y mejores rendimientos. A continuación se discutirán los aspectos relevantes de su propuesta:
@@ -14,7 +15,7 @@ La cualidad que me parece destacable del esquema es la idea de poder calcular si
 
 Existen otras técnicas interesantes, como la que se muestra en [1], donde que se hace _prunning_ dejando _items_ que tengan un mínimo de ```m``` evaluciones de usuarios en común.
 
-Esta lógica es la clave de **escalabilidad** presentada en el paper, pues al agregar nuevos usuarios se puede asumir que la similitud entre _items_ tiene variaciones pequeñas o incluso despreciables. Además, esta misma es capaz de atacar el problema de reducción de rendimiento  en los casos donde la **distribución de datos** es pobre (ie: usuarios nuevos que no tienen muchos _ratings_), pues el recomendador se basará en los _items_ en los que sí se han hecho evaluaciones, lo que en definitiva mejorará la predicción para estos usuarios.
+Esta lógica es la clave de **escalabilidad** presentada en el paper, pues al agregar nuevos usuarios se puede asumir que la similitud entre _items_ tiene variaciones pequeñas o incluso despreciables. Además, esta misma es capaz de atacar el problema de reducción de rendimiento  en los casos donde hay gran **vacíos en los datos** (ie: usuarios nuevos que no tienen muchos _ratings_), pues el recomendador se basará en los _items_ en los que sí se han hecho evaluaciones, lo que en definitiva mejorará la predicción para estos usuarios.
 
 ### 💻 Experimentación:
 El experimento que se realiza en el paper se basa en un _dataset_ de evaluación de películas con 43.000 usuarios y más de 3.500 películas, de los cuales se seleccionó al azar para obtener exactamente ```100.000 ratings```. Estos datos definieron un **sparcity level** de 0.9369 el cuál no se varió en ningún experimento.
