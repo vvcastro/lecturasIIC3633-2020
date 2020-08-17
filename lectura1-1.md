@@ -1,12 +1,12 @@
 # 📖 Critica: Item-based collaborative filtering recommendation algorithms...
 
 ### 📚Contexto:
-Los algoritmos que utilizan _Collaborative Filtering (CF)_ son métodos de recomendación que se basan en buscar similitudes entres usuarios o _items_ y, a partir de estas generar recomendaciones. Estos algoritmos se pueden dividir en _memory-based methods_ y _model-base methods_, entre los primeros se encuentran los _user-based_ e _item-based_ (según [2]) que serán los principales puntos de discusión en el artículo.
+Los algoritmos que utilizan _Collaborative Filtering (CF)_ son métodos de recomendación que se basan en buscar similitudes entres usuarios o _items_ y, a partir de estas, generar recomendaciones. Estos algoritmos se pueden dividir en _memory-based methods_ y _model-base methods_, entre los primeros se encuentran los _user-based_ e _item-based_ (según [2]) que serán los principales puntos de discusión en el artículo.
 
 Si bien algoritmos que emplean _CF_ y, específicamente, _user-based CF_ son los algoritmos más populares y utilizados en la práctica (en los años del paper), la expansión de las aplicaciones _web_ y los millones de nuevos datos que estas generan ha revelado problemas específicos en estos cuando se habla de **escalabilidad** o la **distribución datos**.
 
 ### 🧾 Item-Based CF:
-Ante estas problemáticas, los autores proponen un esquema _item-based CF_ que ataca ambos problemas y que, según los experimentos realizados, resulta en un menor tiempo de computo y mejores rendimientos. A continuación se discutirán los aspectos relevantes del esquema:
+Ante estas problemáticas, los autores proponen un esquema _item-based CF_ que ataca ambos problemas y que, según los experimentos realizados, resulta en un menor tiempo de computo y mejores rendimientos. A continuación se discutirán los aspectos relevantes de su propuesta:
 
 La cualidad que me parece destacable del esquema es la idea de poder calcular similitudes con anterioridad y, a partir de estas, hacer **_prunning_** para disminuir la carga posterior del procesamiento. Y, que si bien en el paper se propone un método que termina con _top-k_ vecinos:
 
