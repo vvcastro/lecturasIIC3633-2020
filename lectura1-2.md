@@ -13,12 +13,16 @@ Creo que una de las propiedades más importante de su modelo es la **gran escabi
 
 Otro punto que me parece necesario recalcar es que su algoritmo **no se afectado por el problema de _local minima_** presentes en otros problemas de optimización. Esto se debe a que la función de pérdida que _FunkSVD_ busca minimizar es convexa lo que nos asegura poder llegar a un óptimo. De todas formas, esto trae el problema de _overfitting_ que también se describe en el post.
 
-### 📕 Aspectos en contra:
+### 📕 Aspectos (no tan) en contra:
 Si bien existe el problema de que muchas de sus decisiones no fueron justificadas ya sea matemáticamente o experimentalmente, puedo asumir que esto se debe a que el blog no es un medio científico formal. Así que, pasando esto por alto, creo que solo hay un aspecto que creo pudo haber mejorado:
 
 Si bien es algo que viene desde la métrica definida por (principalmente) _Netflix_ para evaluar sus predicciones, creo que el hecho de haber escogido solo la métrica de _MSE_ (_mean squared error_) puede ser contraproducente por dos razones:
 
-1. La métrica que se ocupa recae directamente en qué significan (o qué buscan las recomendaciones que estoy haciendo) y,  en este caso, lo único que se busca es minimizar este error en _rating_, lo que podría generar problemas de "sobre-especialización" hacia películas muy similares a las que el usuario ya conoce (lo que es un problema de **serendipity**). Este fenómeno me resulta interesante ya que significa que cambiar la métrica de error sobre la que se está aprendiendo podría variar hacia hacer recomendaciones, por ejemplo, que sean muy distintas a lo que generalmente se ve, pero aún así le gusten mucho al usuario. (
+1. La métrica que se ocupa recae directamente en qué significan (o qué buscan las recomendaciones que estoy haciendo) y,  en este caso, lo único que se busca es minimizar este error en _rating_, lo que podría generar problemas de "sobre-especialización" hacia películas muy similares a las que el usuario ya conoce (lo que es un problema de **serendipity**). Este fenómeno me resulta interesante ya que cambiar la métrica de error con la que se aprende **podría** significar recomendaciones, por ejemplo, que sean muy distintas a lo que generalmente se ve, pero aún así le gusten mucho al usuario.
+   
+2. Otro punto importante, en el cuál este esquema decae un poco es en la incorporación de un _bias_ por usuario, es decir, qué pasa con los usuarios que tienden a ser "más exigentes" y dan calificaciones menores (o mayores). Este punto es abordado por la _Biased Matrix Factorization Recommendation_ en [2], donde se decide incluir el _bias_ que tiene cada usuario y película, llegando a resultados mejores que sin incluirlos.
+   
+3. Finalmente, el mismo autor señala que a la hora de tratar de agregar información extra (fecha) los rendimientos no se mantuvieron. Este problema se ha estudiado desde dos puntos, está la idea de cómo incluir información implícita en el modelo (de acá sale SVD++) y la forma en la que se puede incluir la variable de tiempo (dado el hecho de que, por ejemplo, las películas suelen tener un _peak_ de popularidad). Ambas temáticas son desarrolladas en [3] donde, además, bajo análisis experimental, se lográ ver mejores resultados en el modelo ```TimeSVD++``` que incorpora la idea de SVD++ y la inclusión del tiempo en el modelo.
 
 ## 🖇 Referencias:
 
@@ -26,4 +30,4 @@ Si bien es algo que viene desde la métrica definida por (principalmente) _Netfl
 
 2. Sun W., Zhang X., Liang W., He Z. (2015) High Dimensional Explicit Feature Biased Matrix Factorization Recommendation. In: Li XL., Cao T., Lim EP., Zhou ZH., Ho TB., Cheung D. (eds) Trends and Applications in Knowledge Discovery and Data Mining. Lecture Notes in Computer Science, vol 9441.
 
-3. Ricci, F., Rockach L., Shapira B. (2010). A Comprehensive Survey of Neighborhood-Based Recommendation Methods. Recommender Systems Handbook (pp. 83-86).
+3. Ricci, F., Rockach L., Shapira B. (2010). Advances in collaborative filtering. Recommender Systems Handbook (pp. 83-91).
