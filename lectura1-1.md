@@ -21,7 +21,10 @@ El experimento que se realiza en el paper se basa en un _dataset_ de evaluación
 
 Para mí este es el fue el primer punto en contra en sus experimentos, pues creo que sería necesario hacer un análisis de sensibilidad sobre esta variable, pues tampoco hay una justificación para esta elección (como por ejemplo, que estos sean los valores observados en las aplicaciones comerciales). En vez de esto se elige variar la porción de datos en _training/testings sets_.
 
-A partir de este _dataset_ se elige la métrica _MAE_ para la comparación de rendimientos de diferentes esquemas. Esto genera 
+A partir de este _dataset_ se elige la métrica **_MAE_** para la comparación de rendimientos de diferentes esquemas. Creo que si bien esta es una buena métrica para determinar la **calidad de las predicciones**, en un sistema recomendador se debería evaluar algo más que eso. En mis lecturas me topé con el término **_serendipity_** que engloba la idea de que este esquema no le ofrece al usuario una recomendación a la cual ella/él no pueda acceder, es decir, se podría argumentar sobre si estás prediccion son realmente valiosas para el usuario o simplemente son predicciones "seguras" (que yo creo que son las segunda).
+
+### 📥 Palabras Finales:
+Creo que si bien el método presentado en el paper es eficiente para el caso studiado (considerando la métrica _MAE_), esto está fuertemente sujeto al _dataset_ utilizado. Desde todo lo leído, llegué a la conclusión de que la relación ```usuarios/items``` es la que genera mayor impacto en cuanto al rendimiento de _user-based_ vs _item_based_, siendo el método propuesto en el paper mejor en los casos de donde existen muchos más usuarios que productos.
 
 
 
