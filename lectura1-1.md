@@ -30,7 +30,7 @@ Creo que si bien el método presentado en el paper es eficiente para el caso est
 
 > (...) a small number of high-confidence neighbors is by far preferable to a large number of neighbors for wich the similarity weights are not trustable.
 
-Es desde este _approach_ que para _databases_ con un número mayor de usuarios que de _items_ (como lo son las bases de datos comerciales), los _item-based methods_ resultan tener mejores resultados (la similitud entre _items_ es más representativa al haber más usuarios). 
+Es desde este _approach_ que para _databases_ con un número mayor de usuarios que de _items_ (como lo son las bases de datos comerciales), los _item-based methods_ resultan tener mejores resultados (la similitud entre _items_ es más representativa al haber más usuarios). Para el caso contrario (se da el ejemplo de una página que recomienda _papers_) los _user-based_ methods resultarían con mejores resultados.
 
 
 
