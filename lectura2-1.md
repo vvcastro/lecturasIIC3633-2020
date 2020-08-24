@@ -7,7 +7,7 @@ Si bien la mayoría de las aplicaciones de **Sistemas Recomendadores** (hasta la
 Si bien los resultados que obtienen los autores son significativos, la implementación y evaluación de estos modelos puede contener varios **sesgos** de los cuales se discutirá un poco en esta crítica.
 
 ### 🧾 Collaborative Filtering for Implicit Feedback Datasets:
-El modelo propuesto por los autores sigue un esquema similar a la de los modelos de _Matrix Factorization_, donde se busca descomponer describir a los usuarios e _items_ en atribudos llamados _factors_ (_f_). La idea es que, es estimar la disposición de un usuario _u_ hacia un item _i_ y, dado que trabajan con datos implícitos, ellos utilizan dos variables para cuantificar esta dispoción: $p_{ui}$ y $c_{ui}$, las cuales denotan **preferencia** y **confianza** de este valor $p$, respectivamente. Finalmente, en el problema de optimización, ambas variables son incluidas.
+El modelo propuesto por los autores sigue un esquema similar a la de los modelos de _Matrix Factorization_, donde se busca descomponer describir a los usuarios e _items_ en atribudos llamados _factors_ (_f_). La idea es que, es estimar la disposición de un usuario _u_ hacia un item _i_ y, dado que trabajan con datos implícitos, ellos utilizan dos variables para cuantificar esta dispoción: <img src="https://render.githubusercontent.com/render/math?math=p_{ui}"> y <img src="https://render.githubusercontent.com/render/math?math=c_{ui}">$, las cuales denotan **preferencia** y **confianza** de este valor $p$, respectivamente. Finalmente, en el problema de optimización, ambas variables son incluidas.
 
 ### 📈 Aspectos interesantes:
 
