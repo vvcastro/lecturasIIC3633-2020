@@ -32,3 +32,7 @@ Por último, creo que es algo que pudo inducir al primer punto, es el hecho de q
 ### 📕 Una conclusión:
 Si bien la _implicit data_ es una poderosa herramienta en los problemas de recomendación, me parece fundamental tener una cantidad y calidad de datos que realmente puedan describir un comportamiento específico a nivel usuario.
 Pues, si esto no se cumple, debemos caer en varios supuestos sobre nuestros datos los cuales pueden perjudicar al sistema en casos donde no se tenga buen conocimiento del comportamiento esperado por parte de los usuarios (ie: diferencias culturales entre el programador y los usuarios en los cuales se implementa pueden llevar a sesgos negativos).
+
+## 🖇 Bibliografía Revisada:
+
+1. Schafer, J. B., Frankowski, D., Herlocker, J., & Sen, S. (2007). Collaborative filtering recommender systems. In The adaptive web (pp. 291-324).
