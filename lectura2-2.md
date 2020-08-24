@@ -11,7 +11,7 @@ Uno de los principales problemas a la hora de construir recomendadores con infor
 #### 🎖 Esquema de entrenamiento:
 Basado en análisis bayesiano, se busca maximizar la probabilidad posterior del conjunto de preferencias del usuario _u_ y, desde su expresión por cada _item_, se desprende la siguiente función de pérdida:
 
-![picture 1](images/125e17548ee7bac25e64b3886c3b85b0bcabb715bb06119e7c5dde4926327d36.png)
+> <img src="images/125e17548ee7bac25e64b3886c3b85b0bcabb715bb06119e7c5dde4926327d36.png" width="400" height=300>
 
 En la cual se utiliza **&sigma;(x)** que denota la función sigmoidea y lo hace que toda la expresión sea diferenciable. Acá, debo destacar que en el paper se presenta un (muy) extenso y riguroso análisis estadísticio del porqué esta formulación funciona y cómo asegura llegar al resultado deseado (lo cual es una aspecto positivo, pero hizo un poco difícil la lectura).
 
