@@ -28,4 +28,5 @@ Finalmente, el hecho de haber hecho su análisis sobre dos _datasets_ diferentes
 ### 📕 Aspectos en contra:
 Realmente, el único punto que no se abarcó fue el método de _Maximum Margin Matrix Factorization (MMMF)_ , del cual los autores hablan y comparan con el suyo, pero no llegan a compararlo. Creo que el principal problema con esto es que se habla de que son métodos muy similares e incluso se propone un esquema para que el algoritmo funcione con información ímplicita, pero aún así no se hace experimentalmente. Esto me da algo de inseguridad respecto a si este método puede tener mejores resultados que el que ellos propusieron.
 
-## 🖇 Referencias:
+### 🎉 Una conclusión:
+Me parece que este paper cumple muy bien su objetivo al proponer este gran esquema de optimización y entrenamiento. Especialmente, me parece muy importante la idea que tuvieron para manejar los datos datos nulos vs el _feedback_ negativo, pues si bien no es el ideal, creo que es capaz de utilizar más información que los métodos que existían antes de este paper. Por otra parte, la idea de cambiar **lo que se está optimizando** creo que fue un importante paso hacia obtener mejores métricas de evaluación/entrenamiento.

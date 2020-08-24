@@ -20,14 +20,11 @@ Finalmente la **explicabilidad** del modelo, como se dice en el paper, es una de
 
 ### 📉 Aspectos negativos:
 
-Si bien el esquema tiene cosas muy positivas, hay un par de aseveraciones e ideas que se introducen al modelo las cuales pueden varian bastante según la idea del _programador_ (en el fondo, estoy hablando de la **introducción de _sesgos_**). Esto me parece importante, ya que en el paper **se hacen muchas "suposiciones"** sobre porqué pueden ocurrir ciertas distribuciones en los datos, la cuales pueden ser ciertas, pero no hay una fundamentación detrás de estas y no se estudia como estos puede cambiar el rendimiento del modelo.
+Si bien el esquema tiene cosas muy positivas, hay un par de aseveraciones e ideas que se introducen al modelo y que pueden varian bastante según la idea del _programador_ (en el fondo, estoy hablando de la **introducción de _sesgos_**). Esto me parece importante, ya que en el paper **se hacen muchas "suposiciones"** sobre porqué pueden ocurrir ciertas distribuciones en los datos, la cuales pueden ser ciertas, pero no hay una fundamentación detrás de estas y no se estudia como estos puede cambiar el rendimiento del modelo.
 
-Otro problema, es la idea de que p = 1 se defina con _r<sub>ui</sub> > 0_ (esto igual está un poco ligado con el primer punto) lo cual, si bien lo mencionan como un aspecto que puede variar, **no lo hacen en su experimentación**. Esto me parece un error, ya que se pudo a ver definido el mismo modelo sobre un parámetro _threshold_ y hacer un análisis de sensiblidad sobre este. Es mi creencia que este parámetro es importante, sobre todo porque mencionan la idea de que hay mucho valores de _r<sub>ui</sub>_ que no son 0 debido al _zapping_ o problemas del estilo.
+Otro problema, es la idea de que p = 1 se defina con _r<sub>ui</sub> > 0_ lo cual, si bien lo mencionan como un aspecto que puede variar, **no lo hacen en su experimentación**. Esto me parece un error, ya que se pudo a ver definido el mismo modelo sobre un parámetro _threshold_ y hacer un análisis de sensiblidad sobre este. Es mi creencia que este parámetro es importante, sobre todo porque mencionan la idea de que hay mucho valores de _r<sub>ui</sub>_ que no son 0 debido al _zapping_ o problemas del estilo.
 
-También sobre **p**, este se binariza según un valor de **r<sub>ui</sub>** que es una métrica de **porcentaje** de un show que se ha visto. Esto creo que puede traer el problema de que:
-
-1. Se elimina el peso del tiempo invertido viendo distintos _shows_, si alguien ve series como _Steins Gate_ vs _GoT_, es probable que tenga mucho más tiempo invertido en la segunda que en la primera, aún cuando la primera ya la terminó (tiene r<sub>ui</sub> >= 1).
-
+También sobre **p**; este se binariza según un valor de **r<sub>ui</sub>** que es una métrica del **porcentaje** que se ha visto de un _show_. Esto creo que puede traer un problema ya que **se elimina el peso del tiempo invertido viendo distintos _shows_**. Es decir, si alguien ve series como _Steins Gate_ vs _GoT_, es probable que tenga mucho más tiempo invertido en la segunda que en la primera, aún cuando la primera ya la terminó (tiene r<sub>ui</sub> >= 1).\
 Si bien esto no aplica en su totalidad al caso de estudio que hizo el paper (porque no había servicios de _streaming_ (creo)), sería un problema al usar esta implementación el día de hoy.
 
 Por último, creo que es algo que pudo inducir al primer punto, es el hecho de que **los datos que tienen** o que utilizan a la hora de hacer el modelo **son pobres**. Esto va al hecho de que carecen (o no utilizan) más información que la de cuánto tiempo se vio un determinado canal. Esto creo que genera problemas, sobre todo en la personalización, ya que por ejemplo, se asume que toda una familia que ve televisión se comporta como un usuario. Si bien esto es un tema que va por la contrucción del problema, es una desventaja cuando se compara con _usuarios_ en sitios o aplicaciones _webs_.
@@ -35,5 +32,3 @@ Por último, creo que es algo que pudo inducir al primer punto, es el hecho de q
 ### 📕 Una conclusión:
 Si bien la _implicit data_ es una poderosa herramienta en los problemas de recomendación, me parece fundamental tener una cantidad y calidad de datos que realmente puedan describir un comportamiento específico a nivel usuario.
 Pues, si esto no se cumple, debemos caer en varios supuestos sobre nuestros datos los cuales pueden perjudicar al sistema en casos donde no se tenga buen conocimiento del comportamiento esperado por parte de los usuarios (ie: diferencias culturales entre el programador y los usuarios en los cuales se implementa pueden llevar a sesgos negativos).
-
-## 🖇 Referencias:
