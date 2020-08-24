@@ -21,7 +21,7 @@ Finalmente, utilizando la función de pérdida se formula un esquema de entrenam
 
 Creo que es importante **destacar el primer motivo del paper**: que las métricas de evaluación y entrenamiento pueden no ser siempre las correctas para los que se busca aprender. Esto es algo que discutí en los comentarios anteriores y creo que es clave a la hora de explicar los buenos resultados de este esquema.
 
-Por la parte de experimentación, los resultados hablan por si solos, el método propuesto no solo converge mucho más rápido que los métodos tradicionales, sino que también mejora el rendimiento en gran medida. Además, creo que la experimentación que realizaron fue bastante exhaustiva, en el sentido que probaron y reportaron los resultado de su esquema aplicado a varios modelos bien populares.
+Por la parte de experimentación, los resultados hablan por si solos, el método propuesto no solo converge mucho más rápido que los métodos tradicionales, sino que también mejora el rendimiento en gran medida. Además, creo que la *8experimentación que realizaron fue bastante exhaustiva**, en el sentido que probaron y reportaron los resultado de su esquema aplicado a varios modelos bien populares.
 
 Finalmente, el hecho de haber hecho su análisis sobre dos _datasets_ diferentes (y de naturaleza distinta), aporta a dar más una validez general del esquema. Acá quizás se pudiera incluir un análisis en _datasets_ donde el _ratio_ ```users/items``` sea menor a 1, pero creo que no era el principal objetivo del paper.
 
