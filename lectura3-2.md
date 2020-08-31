@@ -2,7 +2,6 @@
 
 ### 📚Contexto:
 Esta lectura fue un poco distinta al resto ya que pertenecia a un libro y, por lo tanto, no estaba escrito con la idea de revelar nuevos hallazgos o indicar experimentación realizadas.
-A partir de esto, creo que criticar lo que se habla en el texto es un poco dificil, por lo que mi critica será hablar un poco de los temas que me parecieron más relevantes.
 
 Dicho esto, el capítulo se centra en las distintas metodologías y métricas que se tienen para evaluar los sistemas recomendadores actuales (~2010). Para esto los autores señalan dos principales ejes en los cuales se centra su contenidos: **_Experimental Settings_** y **_Recommender System Properties_**:
 
