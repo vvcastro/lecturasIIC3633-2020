@@ -35,7 +35,6 @@ Por otra parte, creo que es importante destacar que el texto da ejemplos de cóm
 
 Creo que este capítulo y, especialmente, la sección de las métricas, abren el espacio para poder entender que un sistema recomendador no solo se base en mejorar predicciones. Es importante entender como cada decisión que se toma sobre la implementación que estamos haciendo puede afectar positiva o negativamente como resulta nuestro experimento o lo que el usuario está recibiendo de nosotros (la idea del _tradeoff_)
 
-## 🖇 Referencias:
-
+## 🖇 Bibliografía Revisada:
 
 1. Anna B. (2016). Recommender Systems - It's Not All About the Accuracy. Recuperado de [Medium](https://gab41.lab41.org/recommender-systems-its-not-all-about-the-accuracy-562c7dceeaff).
