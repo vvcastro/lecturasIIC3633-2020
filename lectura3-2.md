@@ -27,7 +27,7 @@ Finalmente, esta sección termina con los métodos estadísticos que se utilizan
 
 En este punto se exploran (creo) todas las métricas que hoy se utilizan para evaluar sistemas recomendadores. Y, si bien, creo que existen métricas más significativas que otras (por lo menos cuando estamos buscando mejores recomendaciones), el hecho de que **se hable de un _trade-off_** entre estas me parece relevante y algo a considerar siempre que se implementen estos sistemas.
 
-Por otra parte, creo que es importante destacar que el texto da ejemplos de cómo estas distintas métricas pueden afectar la visión que los clientes tienen sobre el sistema. Y, si bien hay métricas como **_Privacy_** que, aunque son dificiles de calcular desde un punto de vista de programación, deben ser consideradas como "utilidad" para los usuarios.
+Por otra parte, creo que es importante destacar que el texto da ejemplos de cómo estas distintas métricas pueden afectar la visión que los clientes tienen sobre el sistema. Y, si bien hay métricas como **_Privacy_** que, aún siendo dificiles de calcular desde un punto de vista de programación, deben ser consideradas como "utilidad" para los usuarios.
 
  Finalmente, creo que una de las métricas que más me gustó es la de _utility_, pues siento que sirve como una herramientas de generalización bastante fuerte frente a problemas reales (especialmente el hecho de poder dar utilidad negativa a resultados no deseados).
 
