@@ -29,7 +29,7 @@ En este punto se exploran (creo) todas las métricas que hoy se utilizan para ev
 
 Por otra parte, creo que es importante destacar que el texto da ejemplos de cómo estas distintas métricas pueden afectar la visión que los clientes tienen sobre el sistema. Y, si bien hay métricas como **_Privacy_** que, aún siendo dificiles de calcular desde un punto de vista de programación, deben ser consideradas como "utilidad" para los usuarios.
 
- Finalmente, creo que una de las métricas que más me gustó es la de _utility_, pues siento que sirve como una herramientas de generalización bastante fuerte frente a problemas reales (especialmente el hecho de poder dar utilidad negativa a resultados no deseados).
+ Finalmente, creo que una de las métricas que más me gustó es la de _utility_, pues siento que sirve como una herramientas de generalización bastante fuerte frente a problemas reales (especialmente el hecho de poder dar utilidad negativa a resultados no deseados). Esta es una métrica de la cual yo no había leído nada al respecto y me sorpendió ver lo poderosa que puede ser.  
 
 ### 📕 Conclusión:
 
