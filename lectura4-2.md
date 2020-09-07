@@ -26,9 +26,22 @@ Para comparar con el método de LSI, los autores presentan un ejemplo visual de 
 
 ❌ En este punto, que es como una forma más visual de ver lo que hace su modelo, me hubiera gustado ver la separación que logra en _datasets_ que cuentan con más _clusters_ (En este caso existían solo _3 clusters_). Ya que si bien es importante dar un significativo positivo a cada eje, la separabilidad de los _clusters_ es lo que prima en los rendimiento que estos obtienen y, a simple vista, no hay diferencia sustancial entre ambos modelos.
 
-### 📈 Recommender System Properties
+## 📈 Experimentación:
 
-### 📕 Conclusión:
+En su experimentación los autores utilizaron dos _datasets_ distintos y compararon su modelo con dos métodos del estado del arte de la época _Avarege Association (AA)_ y _Normalized Cut (NC)_. Además, propusieron para su método un esquema de entrenamiento que utiliza una matriz de datos con _pesos_, que es algo similiar a lo que hace el método _NC_.
+
+❌ Si bien me parece correcto que hayan medido su métodos con estos dos esquemas, creo que hubiera sido útil el hecho de ver la comparación de resultados con _LSI_. Aparte, creo que si bien 2 _datasets_ han sido sufientes en las lecturas que hemos hecho, puede ser necesario hacer más _benchmarks_ de evaluación (más _datasets_).
+
+✅ Las métricas que utilizaron para medir sus resultados fueron las de _accuracy_ y _mutal information_, las cuales me parecen buenas métricas a la hora de evaluar clusterings. Si bien hay bastantes métricas más que pudieron utilizar (por ejemplo en [1]), creo que temas de _cluster quality_ y _number of clusters_ carecen de sentido acá, pues si bien ellos están haciendo "clustering", su **esquema principal es la clasificación de documentos** utilizando _clustering_.
+
+Finalmente, sobre los resultados que llegaron no tengo mucho que agregar, solo no me gusta la generalización que hicieron:
+
+> (...) regardless of the document corpora, the performance ranking is always in the order (...)
+
+Ya que siento que el número de _benchmarks_ realizados no da para hacer una afirmación del estilo.
+
+## 📕 Conclusión:
 
 ## 🖇 Bibliografía Revisada:
 
+1. Manimaran. (2019). Clustering Evaluation strategies. Recuperado de [Medium](https://towardsdatascience.com/clustering-evaluation-strategies-98a4006fcfc)

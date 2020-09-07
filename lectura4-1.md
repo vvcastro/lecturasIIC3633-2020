@@ -26,6 +26,7 @@ Si bien esto nos abre la puerta a mucha información, el principal problema con 
 
 ### 📕 Conclusión:
 Si bien los algoritmos de _content-based_ pueden ser potentes a la hora de describir los gustos o intereses de un usuario, el método pareciera tener no muy buenos resultados prácticos. En [4], se habla de dos problemas típicos: _**Limited content analysis**_, el problema de no tener suficientes datos para describir a las entidades y _**Over-specialization**_, cuando describimos tan bien los intereses del usuario que todos los _items_ que recomendamos son muy similares entre si. Así, se llega a una conclusión general que para obtener buenas recomendaciones es necesario utilizar método híbridos.
+
 ## 🖇 Bibliografía Revisada:
 
 1. Heidenreich, H. (2018). Stemming? Lemmatization? What?. Recuperado en [Medium](https://towardsdatascience.com/stemming-lemmatization-what-ba782b7c0bd8).
