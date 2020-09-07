@@ -2,7 +2,7 @@
   
 ### 📚Contexto:
 
-Si bien este paper no está directamente relacionado con la implementación de sistemas recomendadores, me parece que la idea detrás de _Document Clustering_ es bastante similiar a otras que ya hemos explorado en el curso (de hecho ocupa técnicas similares).
+Si bien este paper no está directamente relacionado con la implementación de sistemas recomendadores, me parece que la idea detrás de _Document Clustering_ es bastante similiar a otras que ya hemos explorado en el curso (de hecho ocupa técnicas similares) y que son posibles utilizar en el problema de recomendación.
 
 El problema de **_Document Clustering_** se puede dividir en dos grandes áreas, _agglomerative clustering_ y _partitional clustering_. Los autores basan su propuesta en este segundo grupo, que tiene como idea base descomponer los documentos en _clusters_ disjuntos y que, en la construcción de estos, se pueda llegar al óptimo de una función específica. De forma más detallada, los autores originan su propuesta desde **una idea similar a la de _Latent Semantic Indexing Method (LSI)_**, que descompone cada documento a un espacio de vectores singulares utilizando _SVD_.
 
