@@ -1,9 +1,5 @@
 # 📖 Critica: Document Clustering Based On Non-negative Matrix Factorization
   
-- Latent semantic indexing method SVD.
-    
-- Bastante bueno para la representación de los clusters.
-  
 ### 📚Contexto:
 
 Si bien este paper no está directamente relacionado con la implementación de sistemas recomendadores, me parece que la idea detrás de _Document Clustering_ es bastante similiar a otras que ya hemos explorado en el curso (de hecho ocupa técnicas similares).
