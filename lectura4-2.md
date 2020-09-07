@@ -41,6 +41,7 @@ Finalmente, sobre los resultados que llegaron no tengo mucho que agregar, solo n
 Ya que siento que el número de _benchmarks_ realizados no da para hacer una afirmación del estilo.
 
 ## 📕 Conclusión:
+Si bien esta lectura no se basó sobre la temática de sistemas recomendadores, creo que hay varios puntos de la formulación hecha por los autores que se puede aplicar a un sistema recomendador. Los dos principales son la idea de esta **explicativilidad que se le da a la descomposición de textos**, la cual hemos visto es un _feature_ importante para los usuarios y, la forma de hacer **_clustering_ para la búsqueda de textos similares**. Pues desde estas no es descabellado pensar en utilizar el _cluster_ cercano para hacer recomendaciones o, ligado a **_content-based_ usar la descripción obtenida de la descomposición como _feature_ de un texto**.
 
 ## 🖇 Bibliografía Revisada:
 
