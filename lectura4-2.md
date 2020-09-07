@@ -9,7 +9,7 @@ El problema de **_Document Clustering_** se puede dividir en dos grandes áreas,
 ## 📈 Propuesta:
 Según los autores, el método de _LSI_ tenía dos grandes problemas: 1. El uso de _SVD_ produce valores negativos, por lo que **no hay un real valor semántico** en cada dirección y 2. Aún **se requiere utilizar métodos de clustering tradicionales** a partir de los resultados.
 
-Así, los autores proponen un modelo basado en _Non-Negative Matrix Factorization (NMF)_. La idea principal es establer un espacio vectorial donde **cada eje corresponda a un _tópico_ (tipo) distinto de documento** y que, **cualquier documento se puede modelar como una combinación lineal de estos tópicos**.
+Así, los autores proponen un modelo basado en _Non-Negative Matrix Factorization (NMF)_. La idea principal es establer un espacio vectorial donde **cada eje corresponda a un _tópico_ (tipo) distinto de documento** y usar la idea de que **cualquier documento se puede modelar como una combinación lineal de estos tópicos**.
 
 ✅ Desde esta primera vista, este método tiene el beneficio de ser bastante más autoexplicativo que el método de _LSI_. De todas formas, creo que partir de la base que de _LSI_ no puede tener valor semántico por tener valores negativos es un error, ya que podría significar componentes opuestas. Creo que este punto depende más de cómo se define las categorías en cada texto (el _embedding_ que se le hacen a las palabras de este).
 
