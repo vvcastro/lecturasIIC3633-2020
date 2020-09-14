@@ -30,8 +30,14 @@ Como último punto conceptual, los autores presentan los distintos esquemas o "p
 
 ❌ Si bien los autores hablan que la función _R_ puede ser vista como una de utilidad cualquiera, creo que hubiera sido importante comentar resultados de _papers_ que avalúen estos sistemas en problemas no solo basados en predicción de _rating_. Sobre todo cuando estamos hablando de contexto esto me parece una diea importante, pues, dado ciertos contexto, el usuario podría querer "descubrir" películas, cosas que caen al apreciar solo el _rating_ predicho.
 
-A partir de esta función, sehabla de tres paradigmas: **_Contextual Prefiltering_**, **_Contextual Postfiltering_** y **_Contextual Modeling_**
+A partir de esta función, se habla de tres paradigmas: **_Contextual Prefiltering_**, **_Contextual Postfiltering_** y **_Contextual Modeling_**. Estos se centran en qué momento se utiliza la información contextual al momento de hacer las recomendaciones.
+1. **_Contextual Prefiltering_**: El filtrado se hace antes de recomendar, por lo que si bien se entrena con menos tuplas, estas tuplas están específicamente asociadas al contexto del usuario (o a un contexto similar)
+2. **_Contextual Postfiltering_**: Las recomendaciones se hacen normalmentes y se filtra el output del sistema. Este filtro se puede hacer con heurísticas de distancia o según algún modelo.
+3. **_Contextual Modeling_**: El contexto se incorpora en el training del modelo y es considerado al hacer recomendaciones.
 
+✅ Si bien los tres esquemas me parecen importantes de estudiar, una de las ideas que me parece más importante está ligada a los primeros dos paradigmas. Cuando se habla de usar un "contexto exacto" y que esto puede traer consecuencias como que existan pocos datos de ese contexto específico, creo que sería importante estudiar la idea de **clasificación de contextos similares** (que realmente es bien similar a la idea expuesta por ```Adomavicius (2005)```). Pero creo que se podría utilizar tanto en _pre_ como _post_ filtering.
+
+❌ Es algo que se dice entre las conclusiones, pero creo que es importante ver comparaciones entre estos esquemas y como estos se comportante (evaluando distintas métricas) para distintos tipos de _datasets_ y aplicaciones de recomendación.
 
 ## 📕 Conclusión:
 
