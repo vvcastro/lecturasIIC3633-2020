@@ -40,7 +40,7 @@ A partir de esta función, se habla de tres paradigmas: **_Contextual Prefilteri
 ❌ Es algo que se dice entre las conclusiones, pero creo que es importante ver comparaciones entre estos esquemas y cómo estos se comportan (evaluando distintas métricas) en distintos tipos de _datasets_ y aplicaciones de recomendación.
 
 ## 📕 Conclusión:
-Si bien el artículo era de un tipo más "exponer el estado del arte", siento que le faltó profundidad al aboradar las temáticas. Aún así, el tema de incluir contexto en recomendaciones me parace bien acertado y es algo que, estoy bastante seguro, en sistemas recomendadores actuales debe estar super estudiado e incluido. Siento que sobre esto se debe a que con técnicas de _Deep Learning_ podemos ser capaz de construit modelos muchos más avanzados y que aprovechen todo tipo de información.
+Si bien el artículo era de un tipo más "exponer el estado del arte", siento que le faltó profundidad al abordar las temáticas. Aún así, el tema de incluir contexto en recomendaciones me parace bien acertado y es algo que, estoy bastante seguro, en sistemas recomendadores actuales debe estar super estudiado e incluido. Siento que en gran parte, esto se debe al desarrollo del _Deep Learning_, pue somos capaces de construir modelos muchos más avanzados y que aprovechen todo tipo de información.
 
 ## 🖇 Bibliografía Revisada:
 
