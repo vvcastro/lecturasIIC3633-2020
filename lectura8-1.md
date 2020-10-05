@@ -46,7 +46,7 @@ En este apartado se analizará cada uno de los componentes principales presentad
 
 En la última sección del paper se propone un modelo simplificado de este esquema, en base a la idea de que estas ```60 preguntas``` pueden ser complejas de aplicar en una evaluación normal.
 
-❌ Creo que si bien hay un punto en el número de preguntas que se aplican, siento que sin una experimentación real es muy complicado efectivamente decir si este modelo simplificado obtiene buenos resultados (o incluso el modelo que proponen). En este sentido, creo que lo correcto hubiera sido hacer una comparativa con resultados sobre la inferencia que se puede hacer desde ambos modelos.
+❌ Creo que si bien hay un punto en el número de preguntas que se aplican, siento que sin una experimentación real es muy complicado efectivamente decir si este modelo simplificado obtiene buenos resultados (o incluso el modelo que proponen). En este sentido, creo que lo correcto hubiera sido hacer una comparativa con resultados sobre la inferencia que se puede hacer desde ambos modelos y, a partir de esta, determinar si un modelo simplificado tiene sentido.
 
 ## 💻 Conclusiones:
 
