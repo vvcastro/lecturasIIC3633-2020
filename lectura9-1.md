@@ -16,7 +16,7 @@ En específico, los autores presentan un *Bandit Recommender System Ensembles*, 
 
 Además, los autores utilizan dos métodos de selección para el algoritmo *e-greedy* y *Thompson method*.
 
-❌ Si bien ambos métodos parecen ser de los métodos más utilizados en el momento del paper, existen métodos (como los explorados en la segunda lectura) que muestran mejores resultados mejores o similares, como *Upper Confidence Bound* (en [1]) u otras formas de abordar el método de *Thompson* o *e-greedy*.
+❌ Si bien ambos métodos parecen ser de los métodos más utilizados en el momento del paper, existen métodos (como los explorados en la segunda lectura) que muestran mejores resultados mejores o similares, como *Upper Confidence Bound* (en [1]) u otras formas de abordar el método de *Thompson* ([2]) o *e-greedy*.
 
 ## 📈 Testeo Ciclíco:
 
@@ -43,3 +43,5 @@ Desde estos podemos ver que el método que los autores proponen obtuvo mejores r
 ## 📎 Bibliografía:
 
 1. Auer, P., Cesa-Bianchi, N. & Fischer, P. Finite-time Analysis of the Multiarmed Bandit Problem. Machine Learning 47, 235–256 (2002). https://doi.org/10.1023/A:1013689704352
+
+2. Chapelle, O., Li, L. (2011). An Empirical Evaluation of Thompson Sampling.
