@@ -16,7 +16,7 @@ En específico, los autores presentan un *Bandit Recommender System Ensembles*, 
 
 Además, los autores utilizan dos métodos de selección para el algoritmo *e-greedy* y *Thompson method*.
 
-❌ Si bien ambos métodos parecen ser de los métodos más utilizados en el momento del paper, existen métodos (como los explorados en la segunda lectura) que muestran mejores resultados en estos esquemas.
+❌ Si bien ambos métodos parecen ser de los métodos más utilizados en el momento del paper, existen métodos (como los explorados en la segunda lectura) que muestran mejores resultados mejores o similares, como *Upper Confidence Bound* (en [1]) u otras formas de abordar el método de *Thompson* o *e-greedy*.
 
 ## 📈 Testeo Ciclíco:
 
@@ -39,3 +39,7 @@ Desde estos podemos ver que el método que los autores proponen obtuvo mejores r
 1. **El método de ensamble principal se mantiene constante:** La optimización del paper lleva a eligir casi siempre le método de *matrix-factorization*. Esto lo atribuyen a lo bueno que es este sistema, pero puede mostrar un problema del mismo esquema de optimización.
 
 2. **El dataset muestra ser mejor en _most popular_:** Me parece extraño esto ya que generalmente *personalized recommendation* suele ser mejor que un método no personalizado, por lo que me gustaría investigar si esto se debe al esquema cíclico probado o porque realmente para el dataset *most-popular* es mejor.
+
+## 📎 Bibliografía:
+
+1. Auer, P., Cesa-Bianchi, N. & Fischer, P. Finite-time Analysis of the Multiarmed Bandit Problem. Machine Learning 47, 235–256 (2002). https://doi.org/10.1023/A:1013689704352
