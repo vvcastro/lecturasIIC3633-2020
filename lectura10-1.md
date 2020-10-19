@@ -43,10 +43,13 @@ Finalmente, los autores proponen un esquema para categorizar los distintos tipos
 ⚙️ Creo que este tipo de utilización es bastante intereantes y me gustaría ver estos aplicado a modelos que quizás incluyan más *implicit data* comomo *timeSVD++*. \
 Por otro lado, está la idea de *AutoRec* que trata de reconstruir (y llenar los *user vectores* e *item vectors*). Este método me parece interesante (creo que tiene una gran aproximación a lo que se podría hacer con una *GAN*) y, de hecho, es uno de los método que presenta mejor *RSME* para el dataset de *MovieLens* (en [este link](https://paperswithcode.com/sota/collaborative-filtering-on-movielens-1m)), por lo que creo, tiene un gran potencial como método a aplicar.
 
-4. ***Convolutional Neural Networks based Recommendation**:* Otro método bastante potente (a mi parecer) y que se basa, principalmente, en aprender caracterísitcas de datos no estructurados (imágenes, texto, audio). En este sentido, creo que, como método, tiene una gran ventaja, pues abre la posibilidad a este tipo de datos.
+4. ***Convolutional Neural Networks based Recommendation**:* Otro método bastante potente (a mi parecer) y que se basa, principalmente, en aprender caracterísitcas de datos no estructurados (imágenes, texto, audio). En este sentido, creo que, como método, tiene una gran ventaja, pues abre la posibilidad a este tipo de datos (por ejemplo, lo utilizado en la *Tarea 01*).
+
+❌ Si bien los métodos y modelos propuesto me parecen muy buenos (y la clasificación también). Siento que se eligen azarosamente a qué métodos plantearle mayor importantacia y, además, se trata de profundizar en estos de forma matemática en una extensión de texto que no da para explicar correctamente todo el *paper*.
 
 ## 💻 Conclusiones:
 
+Personalmente, siento que en esta primera parte de la lectura se hizo un buen análisis de los algoritmos. Aún así, creo que en alguno casos se quizo hacer una análisis a nivel de modelo de optimización y que esto no salió tan bien (principalmente, porque no se alcanza a cubrir la profundidad necesaria). En este sentido, creo que se orientó demasiado a trabajos ya hechos en vez de plantear posibles métodos en los que estos algoritmos se pueden extender en el futuro. Aún así, creo que cumple muy bien el rol de *survey* e introducción para algoritmos de *deep learning* en sistemas recomendadores (veremos cómo va la segunda parte)
 
 ## 🖇 Bibliografía Revisada:
 
